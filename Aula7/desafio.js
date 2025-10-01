@@ -15,14 +15,14 @@ let minhaIdade = 33
 minhaIdade = minhaIdade + 1
 console.log(minhaIdade)
 
-let resultadoSimples = 100
-let resultadoSimples += 50
-console.log(resultadoSimples) 
+let resultadosSimples = 100
+ resultadosSimples += 50
+console.log(resultadosSimples) 
 
 resultadoSimples += 100
-console.log(resultadoSimples)
+console.log(resultadosSimples)
 resultadoSimples *=2
-console=(resultadoSimples)
+console=(resultadosSimples)
 
 
 
