@@ -36,4 +36,4 @@ batahaFacil = combateJusto == combateRapido
 
 console.log("A forcaTripulação é maior ou igual que a forca inimigo?", podeVencer)
 console.log("A chanceVitoria é menor (<) que o limiteSeguranca?",riscoAlto)
-console.log("O combateJusto é igual (==) ao combateRapido ", batahaFacil)
+console.log("O combateJusto é igual (==) ao combateRapido? ", batahaFacil)
