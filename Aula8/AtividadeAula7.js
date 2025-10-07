@@ -22,13 +22,13 @@ console.log(idadeHoras)
 
 // Exercicios fixação
 
-let primeiroNumero = prompt("EScolha um primeiro número")
-let segundoNumero = prompt("Escolha um segundo número")
+ const primeiroNumero = prompt("EScolha um primeiro número")
+ const segundoNumero = prompt("Escolha um segundo número")
 
 console.log( "O primeiro número é maior que o segundo?",primeiroNumero>segundoNumero)
 console.log("O primeiro número número é igual ao segundo?", primeiroNumero === segundoNumero)
-console.log("O primeiro número é divisível pelo primeiro?", primeiroNumero / segundoNumero)
-console.log("O segundo número é divisível pelo primeiro?", segundoNumero / primeiroNumero)
+console.log("O primeiro número é divisível pelo primeiro?", (primeiroNumero%segundoNumero)=== 0)
+console.log("O segundo número é divisível pelo primeiro?", primeiroNumero%primeiroNumero===0)
 
 // Desafio !!!!!
 
