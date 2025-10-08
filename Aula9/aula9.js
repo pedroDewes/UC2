@@ -66,3 +66,53 @@ console.log(fraseMaiuscula2.length)
 const listaDeCompras = ["Abacate","Banana","Tomate"]
 
 console.log(listaDeCompras[0])
+
+// Exercícios Array
+
+const racasCachorros = ["Pug", "Pitbull", "Salchicha", "Pastor Alemão", "Pinscher"]
+const NumeroUsuario = prompt("Escolha um número de 0 a 4!")
+const racaEscolhida = (racasCachorros[NumeroUsuario])
+console.log(racaEscolhida)
+
+// Exemplo
+
+const pokemons = ["Bulbassauro", "Squirtle","charmander", "sceptile", "Kadraba", "Hunter"]
+console.log(pokemons.lenght)
+
+const seriesBoas = ["Vikings", "The Big Bang |Theory"]
+console.log(seriesBoas.includes("Vikings"), seriesBoas.includes("GOT"))
+
+// Pushs
+/*
+const numeros = [1,2,3]
+numeros.push(4)
+console.log(numeros)
+
+numeros.push(5,6,7,8)
+console.log(numeros)
+
+const meusPeixes = ["palhaço", "mandarim", "esturjão"]
+meusPeixes.pop()
+console.log(meusPeixes)
+meusPeixes.pop(meusPeixes)
+console.log(meusPeixes)
+
+const letras = ["A", "B", "C", "D", "E", "F", "G", "H"]
+letras.splices(0,3)
+console.log(letras) */
+// Atividade
+
+const numeros = ["1", "2", "3", "4", "5", "6"] 
+console.log(numeros.lenght)
+ numeros.push("7")
+numeros.splice(3,2)
+console.log(numeros) 
+
+ //Exercícios
+
+ // Undefined
+ // Null
+ // 11
+ // 3
+ // [3, 19, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+ // 9 
