@@ -1,10 +1,10 @@
-const nome = "Pedro"
+ /*const nome = "Pedro"
 const idade = 16
-/*
+
 // Aspas duplas
-const frase = "O meu nome é" + nome + "e minha idade é" + idade + "anos"
-console.log(frase);
-console.log(typeof frase)
+const frase1 = "O meu nome é" + nome + "e minha idade é" + idade + "anos"
+console.log(frase1);
+console.log(typeof frase1)
 
 // Aspas Simples
 const frase2 = 'O meu nome é' + nome + "e minha idade é' + idade + 'anos'
@@ -15,7 +15,7 @@ console.log(typeof frase2)
 const frase3 = `O meu nome é  ${nome}  e minha idade é + ${idade} + anos`
 
 console.log(frase3);
-console.log(typeof frase3) */
+console.log(typeof frase3) 
 
 // Exercício
 
@@ -83,7 +83,7 @@ const seriesBoas = ["Vikings", "The Big Bang |Theory"]
 console.log(seriesBoas.includes("Vikings"), seriesBoas.includes("GOT"))
 
 // Pushs
-/*
+
 const numeros = [1,2,3]
 numeros.push(4)
 console.log(numeros)
@@ -99,16 +99,17 @@ console.log(meusPeixes)
 
 const letras = ["A", "B", "C", "D", "E", "F", "G", "H"]
 letras.splices(0,3)
-console.log(letras) */
+console.log(letras) 
 // Atividade
 
-const numeros = ["1", "2", "3", "4", "5", "6"] 
-console.log(numeros.lenght)
- numeros.push("7")
-numeros.splice(3,2)
+const numeros2 = ["1", "2", "3", "4", "5", "6"] 
+console.log(numeros2.lenght)
+ numeros2.push("7")
+numeros2.splice(3,2)
 console.log(numeros) 
 
  //Exercícios
+//1.
 
  // Undefined
  // Null
@@ -116,3 +117,45 @@ console.log(numeros)
  // 3
  // [3, 19, 5, 6, 7, 8, 9, 10, 11, 12, 13]
  // 9 
+
+//2. 
+const frase = prompt("Digite uma frase?")
+
+console.log(frase.toUpperCase().replaceAll("A", "I"), frase.lenght)
+// SUBI NUM ÔNIBUS EM MIRROCOS 27 
+
+//3. 
+const nome3 = prompt("Qual é o seu nome?")
+const email = prompt("Qual é o seu e-mail?")
+const texto = `O e-mail ${email} foi cadastrado com sucesso. Seja bem vindo(a) ${nome3}`
+
+console.log(texto)
+*/
+//4.
+let comidasFavoritas = ["Pizza, Peixe, Frango, Xis, Lasanha"]
+const comidaFav2 = prompt("Qual sua comida preferida?")
+console.log(comidasFavoritas, comidaFav2)
+comidasFavoritas[1] = comidaFav2
+
+/*
+const arrayVazio = []
+
+const tarefa1 = prompt("Diga uma tarefa que precise realizar no dia")
+const tarefa2 = prompt("Diga outra tarefa")
+const tarefa3 = prompt("Diga outra além dessa")
+
+arrayVazio.push(tarefa1, tarefa2, tarefa3)
+
+const tarefasFeitas = prompt("Escolha uma tarefa feita, 0,1 ou 2")
+arrayVazio.splice(tarefasFeitas, 1)
+
+console.log(arrayVazio)
+
+// 4
+let frutas = ["Banana", "Morango", "Abacaxi", "Laranja", "Ameixa"]
+let indiceDoAbacaxi = frutas.indexOf("Abacaxi")
+let tamanhoDaArray = frutas.length
+// 5
+console.log("Índice de Abacaxi:", indiceDoAbacaxi)
+console.log("Tamanho do array de frutas:", tamanhoDaArray)
+*/
