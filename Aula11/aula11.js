@@ -40,8 +40,8 @@
     else{console.log("Você não pode estudar nessa faculdade")} */
 
     // Exercícios de Fixação
-     // 1.
-const respostaUsuario = prompt("Digite o número que você quer testar")
+     // 1. 
+/*const respostaUsuario = prompt("Digite o número que você quer testar")
 const numero = Number(respostaUsuario)
 
 if( numero % 2 === 0) {                      //a) O teste ve se os numero colocados pelo usuário são 
@@ -66,9 +66,53 @@ else {
 
 //4.
 
-let idade = prompt("Qual é a sua idade?") >= 18
+let idade = Number(prompt("Qual é a sua idade?")) >= 18
 if(idade) {
     console.log("Pode dirigir")
 } else{
-    console.log("Não passou no teste")
+    console.log("Não pode dirigir")
 }
+
+*/
+
+let EscolhaUsuário = prompt("Digite uma entre essas letras: M, V ou N .")       
+const n1 = "M"
+const n2 = "V"
+const n3 = "N"
+if(n1) {console.log("Bom Dia")}
+
+else if(n2) {console.log("Boa Tarde")}
+else if(n3) {console.log("Boa Noite")}
+
+
+
+//6. 
+
+let turnoUsuario = prompt("Escolha umas dessas letras para definir seu turno: M,V ou N")
+
+switch(turnoUsuario.toUpperCase()) {
+    case "M" :
+        console.log("Bom Dia")
+    break
+    case "V" :
+        console.log("Vespertino")
+    break 
+    case "N" :
+        console.log("Boa Noite") 
+}
+
+//7.
+
+const generoFilme = prompt("Qual é o gênero do filme?".toLowerCase()) === "fantasia"
+const precoIngresso = Number(prompt("Qual é o preço do ingresso?")) <= 15
+if(generoFilme&&precoIngresso){
+    console.log("Bom filme")
+}
+else {
+    console.log("Escolha outro filme")
+}
+
+
+
+
+
