@@ -38,10 +38,10 @@ else console.log("O creeper ainda está vivo, com", vidaInimiga, "pontos de vida
 
 const temDiamantes = true
 const nivelMesaCrafting = Number(2)    // Se as condições estiverem de acordo com o código abaixo, será
-const temGravetos = false            // possível craftar a picareta!
+const temGravetos = false         // possível craftar a picareta!
 let temFerro = Number(10)
 
-if(temGravetos===false || nivelMesaCrafting < 3 && temDiamantes===true && temFerro >= 8) {
+if(temGravetos===true || nivelMesaCrafting < 3 && temDiamantes===true && temFerro >= 8) {
     console.log("Picareta de diamante criada! Hora de buscar obsidiana!")
 }
 else console.log("Faltam recursos ou as condições de crafting não são atendidas!")
