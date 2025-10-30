@@ -61,10 +61,10 @@ console.log(valor) // O código faz loops somando todos os valores de 0 a 4. Dan
  
 //2  
 // a) Serão exibidos no console.log os números 19,21, 23, 25, 27 e 30
-//b) Não é possivel pois o for of apenas usa numeros do array para por-los no console.log
+//b) Não é possivel pois é possivel utilizar o index of.
 
 //3
-// No console log será impresso * ** *** **** em lista]
+// No console log será impresso * ** *** **** em lista]  
 
 //Outros exercícios de fixação
 //1a)
@@ -85,8 +85,8 @@ console.log("Os nomes dos seus pets são:", bichinhosEstimacao) */
 //2 
 
 let arrayOriginal = [10, 15, 20, 25, 30, 40, 50, 55]
-for(let numero of arrayOriginal){
-    console.log(numero) 
+for(let numero of arrayOriginal){ // for of percorre por todo array       
+    
 }
 for(let numero of arrayOriginal){
     console.log(numero/10)
@@ -101,5 +101,8 @@ if(arrayOriginal[i]%2===0) {
 let arrayString = ["O elemento do índex i é: numero"]
 console.log(arrayString)
 
+
+
+ //Desafios
 
  
