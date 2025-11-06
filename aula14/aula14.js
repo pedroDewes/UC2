@@ -87,9 +87,14 @@ console.log(somaNumeros(1,2))
 
 //2
 
-let array = [20, 30, 50, 56, 89, 222]
-function functionArray(){
-let array2 = [20, 40]
-
-
+let arrayNumeros = [20, 30, 50, 56, 89, 222]
+let arrayNumeros2 = [2, 4, 5, 7, 9, 10]
+function divisao(array){
+    let novoarray = []
+    novoArray = []
+    novoArray.push(arrayNumeros2[0]/2)
+    novoArray.push(array[array.lengh()-1]/2)
+    return novoArray
 }
+console.log(divisao(arrayNumeros))
+le
