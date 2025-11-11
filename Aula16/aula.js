@@ -21,5 +21,15 @@ function imprimirInfo() {
 console.log("Eu sou Pedro, tenho 17 anos, moro no Rio Grande do Sul e sou estudande")
 }
 
-//2 a)
-  
+//3
+
+let num1 = Number(prompt("Digite o num"))
+let num2 = Number(prompt("Digite o num2"))
+
+function soma(num1,num2) {
+    return num1 + num2
+}
+
+console.log("Números inseridos:", num1, num2)
+console.log("Soma:", soma(num1, num2))
+
