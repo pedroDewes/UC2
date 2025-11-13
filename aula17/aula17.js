@@ -71,14 +71,36 @@ const funcaoObject = function(objeto) {
      ".", "Seu melhor amigo se chama", novoObjeto.melhorAmigo.nome, "e tem", novoObjeto.melhorAmigo.idade, "anos")
 } 
 
+
+
 funcaoObject(representPessoa)
    
 const personagens = [
-  {personagem : "Sasuke", idade : 17, estilo : "Nimjutso", jutsus : ["bola de fogo", "chidori", "amaterasu"]},
+  {personagem : "sasuke", idade : 17, estilo : "Nimjutso", jutsus : ["bola de fogo", "chidori", "amaterasu"]},
   {personagem : "Naruto", idade : 17, estilo : "Ninjutsu", jutsus : ["resengan", "harém", "mil clones das sombras"]},
   {personagem : "Obito", idade : 30, estilo : "Ninjutsu", jutsus : ["bola de fogo", "kamui"]}
 ]
 
 function adicionarPersonagem() {
-    personagens.push{personagens}
+    personagens.push(novosPersonagens)
+    console.log(`O personagem ${novosPersonagens.personagem}, foi adicionado`)
+    
+    }
+
+const novosPersonagens = {
+    personagem : "lee", idade : 17, estilo : "teijutou", 
+    
 }
+adicionarPersonagem(personagens)
+
+function buscarPersonagem() {
+const personagemEscolhido = prompt("Escolha um personagem")
+personagens.find()
+    if (personagemEscolhido===personagens.personagem===true){
+        console.log("As caracteristicas do", personagemEscolhido, "é", personagens.personagem)
+    }
+ else ("Seu personagem não foi encontrado :(")
+    
+}
+
+buscarPersonagem()
