@@ -5,42 +5,101 @@ const personagens = [
     {nome: "Legolas", classe: "Arqueiro", nivel: 18, hp: 160, habilidades: ["Arco élfico", "Visão Aguçada", "Agilidade"], historicoAcoes: []}
 ];
 
+// atacar
 // função para atacar
 function atacar(personagem) {
-    let acao = personagem.nome + "atacou";
+    let acao = personagem.nome + " atacou"; // cria a frase da ação
+    personagem.historicoAcoes.push(acao);   // adiciona no histórico
+    console.log(acao);                      // mostra no console
+}
+
+// defender
+function defender(personagem) {                  
+    let acao = personagem.nome + " se defendeu";
     personagem.historicoAcoes.push(acao);
     console.log(acao);
 }
 
-// função para defender
-function defender(personagem) {
-    let acao = personagem.nome + "se defendeu";
-    personagem.historicoAcoes.push(acao);
-    console.log(acao);
-}
-
-// função para usar habilidade
+// usar habilidade
 function usarHabilidade(personagem, habilidade) {
-    if (personagem.habilidades.includes(habilidade)) {
-        let acao = personagem.nome + "usou a habilidade" + habilidade;
+    let tem = false;  //verifica se a habilidade existe no array de habilidades do personagem
+    for (let i = 0; i < personagem.habilidades.length; i++) {
+        if (personagem.habilidades[i] === habilidade) {
+            tem = true;
+        }
+    }
+    if (tem) {
+        let acao = personagem.nome + " usou a habilidade " + habilidade;
         personagem.historicoAcoes.push(acao);
         console.log(acao);
-    } else {
-        let acao = personagem.nome + "não conseguiu usar sua habilidade";
+    } else {  //se não encontrar a habilidade, mostra que não conseguiu usar
+        let acao = personagem.nome + " não conseguiu usar a habilidade";
         personagem.historicoAcoes.push(acao);
         console.log(acao);
     }
 }
 
-// função para buscar personagem pelo nome
+// buscar personagem
 function buscarPersonagem(nome) {
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < personagens.length; i++) {
         if (personagens[i].nome.toLowerCase() === nome.toLowerCase()) {
             return personagens[i];
         }
     }
-} //Teste
-let aragorn = buscarPersonagem("Aragorn")
-atacar(aragorn)
-defender(aragorn)
-usarHabilidade(aragorn, "Liderança")
+    return undefined;
+}
+
+// excluir personagem
+function excluirPersonagem(nome) {
+    for (let i = 0; i < personagens.length; i++) {
+        if (personagens[i].nome.toLowerCase() === nome.toLowerCase()) {
+            personagens.splice(i, 1);
+            console.log("Personagem " + nome + " foi excluído.");
+            return;
+        }
+    }
+    console.log("Personagem não encontrado!");
+}
+
+// listar todos
+function listarPersonagens() {
+    console.log("Lista de personagens:");
+    for (let i = 0; i < personagens.length; i++) {
+        let p = personagens[i];
+        console.log(p.nome + " | Classe: " + p.classe + " | Nível: " + p.nivel + " | HP: " + p.hp);
+    }
+}
+
+// verificar status
+function verificarStatus(nome) {
+    let personagem = buscarPersonagem(nome);
+    if (personagem) {
+        console.log("Status de " + personagem.nome + ":");
+        console.log("Classe: " + personagem.classe);
+        console.log("Nível: " + personagem.nivel);
+        console.log("HP: " + personagem.hp);
+
+        console.log("Habilidades:");
+        for (let i = 0; i < personagem.habilidades.length; i++) {
+            console.log("- " + personagem.habilidades[i]);
+        }
+
+        console.log("Histórico de Ações:");
+        for (let i = 0; i < personagem.historicoAcoes.length; i++) {
+            console.log((i + 1) + ". " + personagem.historicoAcoes[i]);
+        }
+    } else {
+        console.log("Personagem não encontrado!");
+    }
+}
+
+// ------------------- Teste -------------------
+let aragorn = buscarPersonagem("Aragorn");
+atacar(aragorn);
+defender(aragorn);
+usarHabilidade(aragorn, "Liderança");
+
+listarPersonagens();
+verificarStatus("Aragorn");
+excluirPersonagem("Legolas");
+listarPersonagens();
