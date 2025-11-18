@@ -52,7 +52,7 @@ function buscarPersonagem(nome) {
 // excluir personagem
 function excluirPersonagem(nome) {
     for (let i = 0; i < personagens.length; i++) {
-        if (personagens[i].nome.toLowerCase() === nome.toLowerCase()) {
+        if (personagens[i]() === nome.toLowerCase()) {
             personagens.splice(i, 1);
             console.log("Personagem " + nome + " foi excluído.");
             return;
@@ -93,7 +93,7 @@ function verificarStatus(nome) {
     }
 }
 
-// ------------------- Teste -------------------
+// Teste 
 let aragorn = buscarPersonagem("Aragorn");
 atacar(aragorn);
 defender(aragorn);
